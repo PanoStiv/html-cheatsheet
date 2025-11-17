@@ -71,7 +71,7 @@
     </code></pre>
             <h3>Results:</h3>
                 <p>All that is currently displayed is the title in the browser tab</p>       
-        </section><hr>
+        </section><hr><hr>
 
 <!--New section - Text and Headings-->
 
@@ -210,7 +210,7 @@
                 <p>Abbreviation example: <abbr title="HyperText Markup Language">HTML</abbr></p>
                 <p>Citation example: <cite>“The Great Gatsby”</cite></p>
                 <p>Definition term example: <dfn>HTML</dfn> is the standard markup language for creating web pages.</p>     
-        </section><hr>
+        </section><hr><hr>
 
 <!--New section - Lists and Text Grouping-->     
         <section>
@@ -323,7 +323,81 @@
             </section>
         </main>
 
-</section>
+        </section><hr><hr>
 
+<!--New section - Images and Media-->
+
+    <section>
+        <h2>Images and Media</h2>
+
+        <table>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Embeds an image into the page. Self-closing tag. Uses attributes like src, alt, width, height.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;figure&gt;</code></td>
+                <td>Represents self-contained content such as an image with a caption.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;figcaption&gt;</code></td>
+                <td>Provides a caption for the content inside &lt;figure&gt;.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;audio&gt;</code></td>
+                <td>Embeds audio content. Supports attributes like controls, autoplay, loop.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;video&gt;</code></td>
+                <td>Embeds video content. Can include controls and multiple sources.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;source&gt;</code></td>
+                <td>Defines alternative media sources for audio or video.</td>
+            </tr>
+        </table>
+
+        <h3>Example:</h3>
+
+        <pre><code>
+        &lt;!-- Image example --&gt;
+        &lt;figure&gt;
+            &lt;img src="images/html" alt="Html image"&gt;
+            &lt;figcaption&gt;This is a sample image with a caption.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+
+        &lt;!-- Audio example --&gt;
+        &lt;audio controls&gt;
+            &lt;source src="audios/audio-sample.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+        &lt;/audio&gt;
+
+        &lt;!-- Video example --&gt;
+        &lt;video width="320" height="240" controls&gt;
+            &lt;source src="videos/sample-video.mp4" type="video/mp4"&gt;
+            Your browser does not support the video element.
+        &lt;/video&gt;
+        </code></pre>
+
+        <h3>Results:</h3>
+
+        <figure>
+            <img src="images/html.jpg" alt="Html image" width="500" height="250">
+            <figcaption>This is a sample image with a caption.</figcaption>
+        </figure>
+
+        <audio controls>
+            <source src="audios/audio-sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br><br>
+
+        <video width="320" height="240" controls>
+            <source src="videos/sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        </section><hr><hr>
+        
     </body>
 </html>
